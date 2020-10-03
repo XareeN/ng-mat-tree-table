@@ -1,5 +1,11 @@
 .tree-table {
-  table {
+  mat-table {
     width: 100%;
+    mat-row {
+      &:hover {
+        cursor: pointer;
+        background-color: aliceblue;
+      }
+    }
   }
 }

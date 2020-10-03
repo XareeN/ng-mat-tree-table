@@ -1,4 +1,4 @@
-<h2>tree-table works!</h2>
+<h2>Tree-table component</h2>
 <div class="tree-table mat-elevation-z8">
   <mat-table [dataSource]="dataSource">
 
@@ -23,6 +23,7 @@
     </ng-container>
 
     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-    <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns"
+      (click)="clickHandler(row, $event)"></mat-row>
   </mat-table>
 </div>

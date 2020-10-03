@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TREE_DATA } from './tree-table/mock/data-mock';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'tree-table';
+  dataSource = TREE_DATA;
+  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
 }
