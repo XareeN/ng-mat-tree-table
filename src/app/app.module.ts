@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { TreeTableModule } from './tree-table/tree-table.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -10,6 +11,7 @@ import { TreeTableModule } from './tree-table/tree-table.module';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     TreeTableModule,
   ],
   providers: [],
